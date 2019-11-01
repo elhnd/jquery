@@ -22,6 +22,7 @@
             url = 'update.jsp';
             data = $("#frmEtudiant").serialize() + "&etudiantid=" + etudiantid;
             method = 'POST';
+            isNew = true;
         }
 
         $.ajax({
