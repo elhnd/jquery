@@ -14,7 +14,7 @@
     ResultSet rs;
 
     Class.forName("com.mysql.jdbc.Driver");
-    con = DriverManager.getConnection("jdbc:mysql://localhost:3306/formation","eldji","Eldji@92f");
+    con = DriverManager.getConnection("jdbc:mysql://localhost:3306/formation","root","mdp");
 
     String query = "select * from inscription";
 
