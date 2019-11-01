@@ -20,7 +20,7 @@
          JSONObject obj = new JSONObject();
 
          Class.forName("com.mysql.jdbc.Driver");
-         con = DriverManager.getConnection("jdbc:mysql://localhost:3306/formation","eldji","Eldji@92f");
+         con = DriverManager.getConnection("jdbc:mysql://localhost:3306/formation","root","mdp");
          pst = con.prepareStatement("update inscription set nom = ?,cours = ?, frais = ? where id = ? ");
          pst.setString(1, nom);
          pst.setString(2, cours);
