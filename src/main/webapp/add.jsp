@@ -19,7 +19,7 @@
          JSONObject obj = new JSONObject();
 
          Class.forName("com.mysql.jdbc.Driver");
-         con = DriverManager.getConnection("jdbc:mysql://localhost:3306/formation","eldji","Eldji@92f");
+         con = DriverManager.getConnection("jdbc:mysql://localhost:3306/formation","root","mdp");
          pst = con.prepareStatement("insert into inscription (nom,cours,frais) values(?,?,?)");
          pst.setString(1, nom);
          pst.setString(2, cours);
